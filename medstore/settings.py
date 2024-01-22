@@ -24,7 +24,7 @@ SECRET_KEY = '7=49emm-8rz&y9+-ajikn^*nl%x#^r^!yuz9#0hnxi1n7nhu2j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000','*']
+ALLOWED_HOSTS = ['https://emedicare.onrender.com','127.0.0.1:8000','*']
 # Application definition
 
 INSTALLED_APPS = [
