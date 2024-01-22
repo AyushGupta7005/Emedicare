@@ -24,6 +24,7 @@ SECRET_KEY = '7=49emm-8rz&y9+-ajikn^*nl%x#^r^!yuz9#0hnxi1n7nhu2j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = ['127.0.0.1:8000','*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -33,11 +34,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pharma.apps.PharmaConfig'
+    'pharma.apps.PharmaConfig',
+    'users',
 ]
 
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE= [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

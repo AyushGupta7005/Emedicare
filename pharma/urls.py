@@ -1,8 +1,9 @@
 from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.home, name='index'),
+    path('', views.home, name='index'),
 
     url(r'^dealerform/', views.dealerform, name="dealerform"),
     url(r'^dealerforminsert/', views.dealerforminsert, name="dealerforminsert"),
